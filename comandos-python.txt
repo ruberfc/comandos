@@ -1,0 +1,20 @@
+// Instalar virtual env
+pip install virtualenv
+
+// Verifica la instalación
+virtualenv --version
+
+// Crear un entorno
+virtualenv nombreEntornoVirtual
+
+// Lista de entornos
+lsvirtualenv
+
+//Activar un entorno
+
+
+//Desactivar un entorno
+deactivate
+
+//Eliminar un entorno
+Simplemente elimina la carpeta del entorno.
