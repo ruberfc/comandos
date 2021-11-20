@@ -13,7 +13,7 @@ virtualenv nombreEntornoVirtual
 lsvirtualenv
 
 //Activar un entorno
-
+.\api\Scripts\activate
 
 //Desactivar un entorno
 deactivate
