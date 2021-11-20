@@ -1,22 +1,27 @@
 ENTORNOS VIRTUALES
 
-// Instalar virtual env
+-- Instalar virtual env
 pip install virtualenv
 
-// Verifica la instalación
+-- Verifica la instalación
 virtualenv --version
 
-// Crear un entorno
+-- Crear un entorno
 virtualenv nombreEntornoVirtual
 
-// Lista de entornos
+-- Lista de entornos
 lsvirtualenv
 
-//Activar un entorno
+-- Activar un entorno
 .\api\Scripts\activate
 
-//Desactivar un entorno
+-- Desactivar un entorno
 deactivate
 
-//Eliminar un entorno
+-- Eliminar un entorno
 Simplemente elimina la carpeta del entorno.
+
+PIP
+
+pip install flask
+pip install flask_mysqldb
