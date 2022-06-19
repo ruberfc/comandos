@@ -1,6 +1,6 @@
 GENERAR SSH KEY
+ssh-keygen -t rsa -b 4096 -C "nombre@correo.com"
 
- ssh-keygen -t rsa -b 4096 -C "nombre@correo.com"
 
 COMANDOS PRINCIPALES DE GIT
 
@@ -70,6 +70,7 @@ git merge esclavo
 git log --oneline --graph
 
 PARTE 2:
+
 git init
 git remote add origin git.@github.com:nombre/example.git
 git fetch origin master
