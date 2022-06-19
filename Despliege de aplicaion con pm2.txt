@@ -1,0 +1,6 @@
+cd /var/www/proyecto # Ubicarse sobre el proyecto
+pm2 list # Ver la lista
+ID=0 npm run stop # Detener el proyecto elegido
+npm run pull # Descargar los cambios de repositorio de acuerdo a esta cong.
+npm run build # Construir la aplicacion de acuerdo a esta cong.
+npm run deploy # Desplegar(la app construida) de acuerdo a esta cong

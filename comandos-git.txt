@@ -1,29 +1,73 @@
 COMANDOS PRINCIPALES DE GIT
 
 PARTE 1:
-git init #iniciar git en proyecto
-git config --global user.name "Ruber" #asignar usuario a proyecto
-git config --global user.name #comprobar
-git config --global user.email "ruberfc@gmail.com" #asignar email a proyecto
-git config --global user.name #comprobar
-git status #estado general del proyecto
-git add "comandos-git.txt" ó git add -A ó git add . #agregar al state area
-git commit -m "act 27-07-21 11:57" #hacer la fotografia de tiempo o commit
-git log #ver todos los commits
-git log --oneline #ver todos los commits mas resumidos
-git diff #ver diferencias en el archivo
-git restore --staged "comandos-git.txt" #quitar el archivo de state area
-git checkout eea7929 #volver a un punto de tiempo especifico
-git checkout master #regresar al punto de tiempo principal
-git diff eea7929 d3a905a #ver la diferencia entre los commits especificos
-git restore comandos-git.txt ó git restore . #restaurar fragmentos de archivos antes del agregar al state area
-git branch #ver la ramas del proyecto
-git branch esclavo #crear la rama esclavo
-git checkout esclavo ó git switch esclavo #moverse a la rama esclavo
-git merge esclavo #juntar los cambios de esclavo a la rama principal
-git log --oneline --graph #ver la union de los cambios
 
-PARTE 2
-git remote add origin https://github.com/ruberfc/comandos.git
-git remote -v
-git push origin master
+#iniciar git en proyecto
+git init
+
+#asignar usuario a proyecto
+git config --global user.name "Ruber"
+
+#comprobar
+git config --global user.name
+
+#asignar email a proyecto
+git config --global user.email "ruberfc@gmail.com"
+
+#comprobar
+git config --global user.name
+
+#estado general del proyecto
+git status
+
+#agregar al state area
+git add "comandos-git.txt" ó git add -A ó git add .
+
+#hacer la fotografia de tiempo o commit
+git commit -m "act 27-07-21 11:57"
+
+#ver todos los commits
+git log
+
+#ver todos los commits mas resumidos
+git log --oneline
+
+#ver diferencias en el archivo
+git diff
+
+#quitar el archivo de state area
+git restore --staged "comandos-git.txt"
+
+#volver a un punto de tiempo especifico
+git checkout eea7929
+
+#regresar al punto de tiempo principal
+git checkout master
+
+#ver la diferencia entre los commits especificos
+git diff eea7929 d3a905a
+
+#restaurar fragmentos de archivos antes del agregar al state area
+git restore comandos-git.txt ó git restore .
+
+#ver la ramas del proyecto
+git branch
+
+#crear la rama esclavo
+git branch esclavo
+
+#moverse a la rama esclavo
+git checkout esclavo ó git switch esclavo
+
+#juntar los cambios de esclavo a la rama principal
+git merge esclavo
+
+#ver la union de los cambios
+git log --oneline --graph
+
+PARTE 2:
+git init
+git remote add origin git.@github.com:ruberfc/example.git
+git fetch origin master
+git merge origin/master
+
