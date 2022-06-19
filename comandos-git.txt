@@ -1,3 +1,7 @@
+GENERAR SSH KEY
+
+ ssh-keygen -t rsa -b 4096 -C "nombre@correo.com"
+
 COMANDOS PRINCIPALES DE GIT
 
 PARTE 1:
@@ -6,13 +10,13 @@ PARTE 1:
 git init
 
 #asignar usuario a proyecto
-git config --global user.name "Ruber"
+git config --global user.name "Nombre"
 
 #comprobar
 git config --global user.name
 
 #asignar email a proyecto
-git config --global user.email "ruberfc@gmail.com"
+git config --global user.email "nombre@correo.com"
 
 #comprobar
 git config --global user.name
@@ -67,7 +71,7 @@ git log --oneline --graph
 
 PARTE 2:
 git init
-git remote add origin git.@github.com:ruberfc/example.git
+git remote add origin git.@github.com:nombre/example.git
 git fetch origin master
 git merge origin/master
 
